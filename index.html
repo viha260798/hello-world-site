@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viha · UX Designer / Developer</title>
+<meta name="description" content="Viha, UX Designer / Developer at Edge8.">
+<style>
+  :root{--bg:#fafaf7;--ink:#17171a;--muted:#5d5d66;--line:#e4e4de;--accent:#3b5bdb;--card:#fff}
+  @media (prefers-color-scheme:dark){:root{--bg:#121214;--ink:#f1f1ee;--muted:#a3a3ad;--line:#2a2a2f;--accent:#8ea4ff;--card:#1a1a1e}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  main{max-width:720px;margin:0 auto;padding:72px 20px 56px}
+  .eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600;margin:0 0 12px}
+  h1{font-size:clamp(34px,7vw,52px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+  .lead{font-size:19px;color:var(--muted);margin:0 0 48px;max-width:56ch}
+  h2{font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 16px}
+  section{margin-bottom:48px}
+  .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card h3{margin:0 0 6px;font-size:19px}
+  .card p{margin:0;color:var(--muted);font-size:16px}
+  a{color:var(--accent);text-underline-offset:3px}
+  a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+  .btn{display:inline-block;padding:12px 20px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;min-height:44px}
+  @media (prefers-color-scheme:dark){.btn{color:#121214}}
+  footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="eyebrow">Hello, world</p>
+    <h1>Hi, I'm Viha.</h1>
+    <p class="lead">UX Designer / Developer at Edge8. I design learning and training products, then ship them to the web with AI as my build partner.</p>
+  </header>
+
+  <section aria-labelledby="work">
+    <h2 id="work">What I work on</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>AIO LABZ</h3>
+        <p>An AI certification platform: micro sessions, hands-on challenges and an AI Buddy that helps learners plan, build and get graded.</p>
+      </article>
+      <article class="card">
+        <h3>Payroll IQ</h3>
+        <p>A payroll training product, built on its own design system and tokens for a consistent, accessible learning experience.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact">
+    <h2 id="contact">Say hello</h2>
+    <p>Want to talk product, UX or shipping with AI? Find me on the AIO LABZ community.</p>
+    <a class="btn" href="https://www.aiolabz.com">Visit AIO LABZ</a>
+  </section>
+
+  <footer>Built with Claude Code · Hosted on GitHub Pages · Version 1</footer>
+</main>
+</body>
+</html>
